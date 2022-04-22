@@ -1,6 +1,6 @@
 {
     "name": "PersistSettings",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A persistent settings / config library for the Arduino framework on the ESP32 / ESP8266 platforms.",
     "keywords": "settings,persistent,config",
     "repository":
