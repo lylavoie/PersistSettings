@@ -51,7 +51,7 @@ void PersistSettings<T>::Begin(void){
     // Get the stored config version version, if it's not equal to then the version provided
     // with the the detail, we assume the DefaultConfig has a newer revision of the
     // Config object and we initialize to that value instead of stored values.
-    // A value of 0 indicates the key didn't exist, assume no seetings exist.
+    // A value of 0 indicates the key didn't exist, assume no settings exist.
     unsigned int storedVersion = pref.getUInt("version", 0);
     if( storedVersion == 0 || storedVersion != mConfigVersion ){
         log_e("Version mismatch (saved: %d, current: %d), resetting to defaults.\r\n", storedVersion, mConfigVersion);

@@ -13,7 +13,7 @@ struct ConfigObject{
     static const unsigned int Version = 1;  
 
     // All values should be initialized to their default values.  This
-    // onject typedef is used to reset the object to the default values
+    // object typedef is used to reset the object to the default values
     // if the settings can not be read from the persistent storage, an
     // error is detected, the version changes, or ResetToDefault() is called.
     int Setting1 = 0;
