@@ -1,0 +1,32 @@
+{
+    "name": "PersistSettings",
+    "version": "1.0.0",
+    "description": "A persistent settings / config library for the Arduino framework on the ESP32 / ESP8266 platforms.",
+    "keywords": "settings,persistent,config",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/lylavoie/PersistSettings.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Lincoln Lavoie",
+        "email": "lincoln.lavoie@gmail.com",
+        "url": "https://github.com/lylavoie"
+      }
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/lylavoie/PersistSettings",
+    "frameworks": ["ardunio"],
+    "platforms": ["espressif32"],
+    "headers": ["PersistSettings.h"],
+    "examples": [
+        {
+            "name": "Simple Config",
+            "base": "examples/simple_config",
+            "files": [
+                "simple_config.cpp"
+            ]
+        }]
+  }
