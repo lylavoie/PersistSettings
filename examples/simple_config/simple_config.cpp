@@ -1,3 +1,4 @@
+
 /* SPDX-License-Identifier: MIT
  * Copyright(c) 2022 Lincoln Lavoie <lincoln.lavoie@gmail.com>
  */
@@ -18,7 +19,7 @@ struct ConfigObject{
     int Setting1 = 0;
     char Setting2[20] = "Foo";
     bool Setting3 = false;
-}
+};
 
 // Construct PersistSettings object with the template of our
 // configuration object, and provide the expected version of
@@ -30,7 +31,7 @@ void setup(){
     // Read the object from the persistent storage.  Before this 
     // call, the Settings.Config object would have only the default
     // values and Settings.Valid() will return false.
-    Settings.begin();
+    Settings.Begin();
 
     // Verify a valid Config is available and update a value.
     if( Settings.Valid() ){
